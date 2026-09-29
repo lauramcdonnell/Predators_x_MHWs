@@ -92,7 +92,7 @@ Script 02 requires:
 
 ## Reproducibility scope
 
-The scripts currently provided here reproduce the MHW detection and event-control construction portions of the analysis. Downstream habitat-response calculations and statistical analyses are separate from the workflow currently included in this repository.
+The scripts currently provided here reproduce the MHW detection and event-control construction portions of the analysis. 
 
 ## Citation
 
