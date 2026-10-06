@@ -63,7 +63,7 @@ The script:
 - links daily habitat estimates to the event and control dates produced by Script 02;
 - summarizes habitat area within each event and matched control period using the median; and
 - calculates percent habitat-area change as \((A_{event}-A_{control})/A_{control}\times100\).
-That matches the manuscript description that daily core-habitat extent was calculated as the total area of cells exceeding the species-specific threshold, then summarized by the median within event and control periods.
+
 
 
 ## Data requirements
