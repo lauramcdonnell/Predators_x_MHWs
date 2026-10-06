@@ -4,7 +4,7 @@ Code supporting the manuscript:
 
 **McDonnell et al. _Marine heatwaves expose multiple categories of predator habitat disruption._**
 
-This repository contains code used to identify marine heatwaves (MHWs) from daily sea surface temperature data and construct the regional event-control windows used for matched predator-habitat comparisons.
+This repository contains code used to identify marine heatwaves (MHWs), construct regional event-control windows, and quantify changes in predicted predator core-habitat area during MHW events.
 
 ## Repository contents
 
@@ -52,6 +52,19 @@ regional MHW extent and event-control lookup tables
 ```
 
 Users should edit the paths in the **USER SETTINGS** section at the top of each script before running.
+
+## `03_calculate_core_habitat_area.R`
+Calculates daily species core-habitat area from species distribution model predictions and links those estimates to the matched MHW event-control windows.
+
+The script:
+- applies a species-specific habitat-suitability threshold to each daily SDM prediction to identify core habitat;
+- restricts calculations to species-specific retained occupancy months;
+- calculates total daily core-habitat area in km² using grid-cell area;
+- links daily habitat estimates to the event and control dates produced by Script 02;
+- summarizes habitat area within each event and matched control period using the median; and
+- calculates percent habitat-area change as \((A_{event}-A_{control})/A_{control}\times100\).
+That matches the manuscript description that daily core-habitat extent was calculated as the total area of cells exceeding the species-specific threshold, then summarized by the median within event and control periods.
+
 
 ## Data requirements
 
