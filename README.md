@@ -103,9 +103,15 @@ Script 02 requires:
 - `readr`
 - `stringr`
 
-## Reproducibility scope
+Script 03 requires:
+- `terra`
+- `dplyr`
+- `tidyr`
+- `readr`
+- `stringr`
+- `lubridate`
+- `purrr`
 
-The scripts currently provided here reproduce the MHW detection and event-control construction portions of the analysis. 
 
 ## Citation
 
